@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin-top: 2.5vh;
+            display: flex;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .left-column {
+            width: 15%;
+            background-color: white;
+            border-left: 3px solid #E1BE97;
+            border-right: 1px solid #F9F4E9;
+            padding: 20px;
+        }
+        .right-column {
+            width: 85%;
+            background-color: white;
+            padding: 20px;
+        }
+        .blog-title {
+            text-align: center;
+            color: #664401;
+            font-size: 1vh;
+            padding-left: 20%;
+            padding-top: 15%;
+        }
+        .blog-title h1 {
+            color: darkbrown;
+            font-size: 2vh;
+            margin: 0;
+        }
+        .nav-menu a {
+            display: block;
+            color: darkgray;
+            font-size: 1.8vh;
+            margin-bottom: 10px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        .nav-menu a:hover {
+            color: darkbrown;
+            font-weight: bold;
+        }
+        .notes-section h2,
+        .blogs-section h2 {
+            color: black;
+            font-size: 2.5vh;
+            margin-bottom: 20px;
+        }
+        .note-card {
+            background-color: #F9F4E9;
+            border-radius: 10px;
+            padding: 10px;
+            margin-right: 40px;
+            transition: border 0.3s ease;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .note-card:hover {
+            border: 1px solid #E1BE97;
+        }
+        .note-card p:first-child {
+            font-size: 1.5vh;
+            color: black;
+            margin: 0;
+        }
+        .note-card p:last-child {
+            font-size: 1vh;
+            color: gray;
+            margin: 0;
+        }
+        .blog-item {
+            margin-bottom: 40px;
+        }
+        .blog-item img {
+            width: 500px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .blog-item h3 {
+            font-size: 2.5vh;
+            margin: 10px 0;
+        }
+        .blog-item p {
+            font-size: 1.5vh;
+            color: gray;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <div class="blog-title">
+                <h1>个人博客</h1>
+            </div>
+            <div class="nav-menu">
+                <a href="#">主页</a>
+                <a href="#">关于我</a>
+                <a href="#">博客</a>
+                <a href="#">笔记</a>
+                <a href="#">知识库</a>
+                <a href="#">智能体</a>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="notes-section">
+                <h2>我的笔记</h2>
+                <div class="note-card">
+                    <p>生活中的无形画布</p>
+                    <p>日期：2024.10.5</p>
+                </div>
+                <div class="note-card">
+                    <p>塑造AI的魔法</p>
+                    <p>日期：2024.10.10</p>
+                </div>
+                <div class="note-card">
+                    <p>园艺中生命哲学的呼吸感</p>
+                    <p>日期：2024.10.15</p>
+                </div>
+            </div>
+            <div class="blogs-section">
+                <h2>最近博客</h2>
+                <div class="blog-item">
+                    <img src="https://img.alicdn.com/imgextra/i2/O1CN01VjWLAB21Zb4eAatD8_!!6000000006999-2-tps-928-1232.png" alt="活力的源泉">
+                    <h3>活力的源泉：健康生活的艺术与科学</h3>
+                    <p>健康生活不仅仅是关于身体的活力，它是一种全面的生活方式...</p>
+                </div>
+                <div class="blog-item">
+                    <img src="https://img.alicdn.com/imgextra/i1/O1CN01n5bYVC1LISOAf9gSM_!!6000000001276-2-tps-1232-928.png" alt="风景与人群">
+                    <h3>在风景与人群中寻找内心的宁静角落</h3>
+                    <p>在喧嚣的城市中，我们常常感到内心的喧哗和不安...</p>
+                </div>
+                <div class="blog-item">
+                    <img src="https://img.alicdn.com/imgextra/i2/O1CN01Fi9JNQ1e59aJxBRji_!!6000000003819-2-tps-1232-928.png" alt="记录艺术">
+                    <h3>记录艺术中时间与记忆的交汇</h3>
+                    <p>艺术是时间的容器，它捕捉并保存了特定时刻的情感和体验...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
