@@ -23,7 +23,38 @@
         }
 
         .hover-scale:hover {
-            transform: scale(1.05);
+            transform: scale(1.02);
+        }
+
+        /* 论文卡片样式 */
+        .paper-card {
+            border-left: 4px solid #22c55e;
+            transition: all 0.3s ease;
+        }
+
+        .paper-card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transform: translateX(2px);
+        }
+
+        .paper-title {
+            font-weight: 600;
+            color: #1e3a8a;
+        }
+
+        .paper-authors {
+            font-size: 0.9rem;
+            color: #4b5563;
+        }
+
+        .paper-journal {
+            font-style: italic;
+            color: #374151;
+        }
+
+        .paper-meta {
+            font-size: 0.85rem;
+            color: #6b7280;
         }
     </style>
 </head>
@@ -47,23 +78,24 @@
             <!-- 个人介绍 -->
             <div class="intro-section mb-10">
                 <h2 class="text-2xl font-bold mb-3">关于我</h2>
-                <p class="text-gray-700">我是一名在读研究生，专业是植物保护，本科学习的是车辆工程。我是 ISTP 类型的人，喜欢探索电子极客相关的知识，并且热衷于手工制作。</p>
+                <p class="text-gray-700">我是一名在读研究生，专业是植物保护。我喜欢探索电子极客相关的知识，并且热衷于手工制作。</p>
             </div>
             <!-- 专业领域 -->
             <div class="notes-section mb-10">
-                <h2 class="text-2xl font-bold mb-5">植物保护</h2>
-                <div class="flex space-x-4">
-                    <div class="note-card bg-green-50 rounded-lg p-3 hover:border-green-300 border transition-colors hover-scale">
-                        <p class="text-base font-medium mb-1">病虫害防治新方法</p>
-                        <p class="text-sm text-gray-500">日期：2024.10.5</p>
+                <h2 class="text-2xl font-bold mb-5">研究成果</h2>
+                <div class="paper-card bg-white rounded-lg p-4 mb-4 border border-gray-100">
+                    <div class="paper-title mb-2">The influence of climate change on <i>Primula Sect. Crystallophlomis</i> in southwest China</div>
+                    <div class="paper-authors mb-2">Li, A., Zhou, H., Luo, X. et al.</div>
+                    <div class="paper-journal mb-3"><span class="font-medium">BMC Plant Biol</span> 25, 438 (2025). <a href="https://doi.org/10.1186/s12870-025-06466-1" class="text-blue-600 hover:underline">https://doi.org/10.1186/s12870-025-06466-1</a></div>
+                    <div class="flex flex-wrap gap-4 mt-3">
+                        <div class="paper-meta"><span class="font-medium">Received:</span> 24 December 2024</div>
+                        <div class="paper-meta"><span class="font-medium">Accepted:</span> 26 March 2025</div>
+                        <div class="paper-meta"><span class="font-medium">Published:</span> 05 April 2025</div>
                     </div>
-                    <div class="note-card bg-green-50 rounded-lg p-3 hover:border-green-300 border transition-colors hover-scale">
-                        <p class="text-base font-medium mb-1">植物保护研究进展</p>
-                        <p class="text-sm text-gray-500">日期：2024.10.10</p>
-                    </div>
-                    <div class="note-card bg-green-50 rounded-lg p-3 hover:border-green-300 border transition-colors hover-scale">
-                        <p class="text-base font-medium mb-1">生态农业中的植物保护</p>
-                        <p class="text-sm text-gray-500">日期：2024.10.15</p>
+                    <div class="mt-3">
+                        <button class="bg-green-100 hover:bg-green-200 text-green-700 px-3 py-1 rounded text-sm transition-colors">
+                            <i class="fa-solid fa-download mr-1"></i> Download citation
+                        </button>
                     </div>
                 </div>
             </div>
