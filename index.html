@@ -4,35 +4,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>个人博客 - [你的名字]</title>
+    <title>个人博客 - 微风易逝</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
     <style>
         /* 自定义一些 Tailwind 不直接支持的样式 */
-        .border-left-custom {
+        。border-left-custom {
             border-left: 3px solid #22c55e;
         }
 
-        .border-right-custom {
+        。border-right-custom {
             border-right: 1px solid #e5e7eb;
         }
 
         /* 悬停动画效果 */
-        .hover-scale {
+        。hover-scale {
             transition: transform 0.3s ease;
         }
 
-        .hover-scale:hover {
+        。hover-scale:hover {
             transform: scale(1.02);
         }
 
         /* 论文卡片样式 */
-        .paper-card {
+        。paper-card {
             border-left: 4px solid #22c55e;
             transition: all 0.3s ease;
         }
 
-        .paper-card:hover {
+        。paper-card:hover {
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
             transform: translateX(2px);
         }
@@ -68,9 +68,9 @@
             <div class="nav-menu space-y-2">
                 <a href="#" class="text-gray-500 hover:text-green-700 hover:font-bold hover-scale">主页</a>
                 <a href="#" class="text-gray-500 hover:text-green-700 hover:font-bold hover-scale">关于我</a>
-                <a href="#" class="text-gray-500 hover:text-green-700 hover:font-bold hover-scale">植物保护</a>
-                <a href="#" class="text-gray-500 hover:text-green-700 hover:font-bold hover-scale">电子极客</a>
-                <a href="#" class="text-gray-500 hover:text-green-700 hover:font-bold hover-scale">手工制作</a>
+                <a href="#" class="text-gray-500 hover:text-green-700 hover:font-bold hover-scale">植物</a>
+                <a href="#" class="text-gray-500 hover:text-green-700 hover:font-bold hover-scale">电子</a>
+                <a href="#" class="text-gray-500 hover:text-green-700 hover:font-bold hover-scale">机械</a>
                 <a href="#" class="text-gray-500 hover:text-green-700 hover:font-bold hover-scale">博客文章</a>
             </div>
         </div>
@@ -84,7 +84,11 @@
             <div class="notes-section mb-10">
                 <h2 class="text-2xl font-bold mb-5">研究成果</h2>
                 <div class="paper-card bg-white rounded-lg p-4 mb-4 border border-gray-100">
-                    <div class="paper-title mb-2">The influence of climate change on <i>Primula Sect. Crystallophlomis</i> in southwest China</div>
+                    <div class="paper-title mb-2">
+                        <a href="https://doi.org/10.1186/s12870-025-06466-1" target="_blank" class="hover:underline">
+                            The influence of climate change on Primula </i>Sect.<i> Crystallophlomis</i> in southwest China
+                        </a>
+                    </div>
                     <div class="paper-authors mb-2">Li, A., Zhou, H., Luo, X. et al.</div>
                     <div class="paper-journal mb-3"><span class="font-medium">BMC Plant Biol</span> 25, 438 (2025). <a href="https://doi.org/10.1186/s12870-025-06466-1" class="text-blue-600 hover:underline">https://doi.org/10.1186/s12870-025-06466-1</a></div>
                     <div class="flex flex-wrap gap-4 mt-3">
@@ -92,11 +96,15 @@
                         <div class="paper-meta"><span class="font-medium">Accepted:</span> 26 March 2025</div>
                         <div class="paper-meta"><span class="font-medium">Published:</span> 05 April 2025</div>
                     </div>
-                    <div class="mt-3">
-                        <button class="bg-green-100 hover:bg-green-200 text-green-700 px-3 py-1 rounded text-sm transition-colors">
-                            <i class="fa-solid fa-download mr-1"></i> Download citation
-                        </button>
+                    <div class="mt-4">
+                        <img src="https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs12870-025-06466-1/MediaObjects/12870_2025_6466_Fig4_HTML.png?as=webp"
+                            alt="Current distribution predictions for P. Crystallophlomis" class="w-full rounded-lg shadow-md">
                     </div>
+                    <div class="mt-3">
+                         <a href="https://citation-needed.springer.com/v2/references/10.1186/s12870-025-06466-1?format=refman&flavour=citation" target="_blank" class="bg-green-100 hover:bg-green-200 text-green-700 px-3 py-1 rounded text-sm transition-colors inline-flex items-center">
+                             <i class="fa-solid fa-download mr-1"></i> Download citation
+                         </a>
+                     </div>
                 </div>
             </div>
             <!-- 兴趣爱好 -->
